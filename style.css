@@ -12,32 +12,34 @@ body {
     width: 100vw;
 }
 
-header,
-main,
-footer {
-    border: 1px solid black;
-}
-
 /* MAIN LAYOUT */
 .container {
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-rows: 1fr 10fr 1fr;
+    background: radial-gradient(gold,goldenrod);
 }
 
 header {
     grid-row:1/2;
     display: grid;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    font-size: 2rem;
+    background: black;
+    border-bottom: 2px solid whitesmoke;
+    color: whitesmoke;
+    padding: 10px;
 }
 
 main {
     grid-row: 2/3;
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    text-align: center;
+    gap: 20px;
 }
 
 footer{
@@ -45,20 +47,49 @@ footer{
     display: grid;
     align-items: center;
     justify-content: center;
+    background: black;
+    border-top: 2px solid whitesmoke;
 }
 
 /* APP */
-.app-container {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
 
+
+.current-time {
+    font-size: 8rem;
 }
 
-.app-container div {
+.alarm-time {
+    font-size: 4em;
+}
+
+.control-box {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 10px
+}
+
+.control-box * {
+    font-size: 1rem;
+}
+
+#sound-selector {
+    height: 2em;
+    width: 15em;
     text-align: center;
+    background-color: inherit;
+    border-radius: 25px;
+    border: 2px solid black;
+    
 }
 
-.audio-box {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+button {
+    height: 2em;
+    width: 8em;
+    padding: 2px;
+    background-color: inherit;
+    border-radius: 25px;
+    border: 2px solid black;
 }
+
+
