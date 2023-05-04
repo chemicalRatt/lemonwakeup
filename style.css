@@ -19,25 +19,12 @@ body {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-rows: 20fr 1fr;
    
 }
 
-header {
-    grid-row:1/2;
-    display: grid;
-    align-items: center;
-    justify-content: left;
-    font-family: "Underdog", serif,monospace;
-    font-size: 2rem;
-    background: black;
-    border-bottom: 2px solid whitesmoke;
-    color: goldenrod;
-    padding: 10px;
-}
-
 main {
-    grid-row: 2/3;
+    grid-row: 1/2;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -46,7 +33,7 @@ main {
 }
 
 footer{
-    grid-row: 3/4;
+    grid-row: 2/3;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -56,55 +43,15 @@ footer{
     color: whitesmoke;
 }
 
-.logo {
-    padding: 5px;
-    border: 2px solid whitesmoke;
-    border-radius: 50%;
-}
-
 /* APP */
 .current-time,
 .alarm-time {
     font-family: "Allerta Stencil", monospace;
+    font-size: clamp(2rem,30vh,10rem);
+    color: brown;
+    font-weight: bold;
+    text-shadow: brown 1px 0 10px;
 }
 
-.current-time {
-    font-size: 12rem;
-}
-
-.alarm-time {
-    font-size: 8em;
-}
-
-.control-box {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    gap: 10px
-}
-
-.control-box * {
-    font-family: "Comfortaa",monospace;
-    font-size: 1rem;
-}
-
-#sound-selector {
-    height: 2em;
-    width: 15em;
-    text-align: center;
-    background-color: inherit;
-    border-radius: 25px;
-    border: 2px solid black;
-    
-}
-
-button {
-    height: 2em;
-    width: 8em;
-    padding: 2px;
-    background-color: inherit;
-    border-radius: 25px;
-    border: 2px solid black;
-}
 
 
