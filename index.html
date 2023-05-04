@@ -11,10 +11,22 @@
 <body>
     <div class="container">
         <header>
-            <h1>lemonWakeUp</h1>
+            lemonWakeUp
         </header>
         <main>
-            placeholder main
+            <div class="app-container">
+                <div class="current-time">12:00:00</div>
+                <div class="alarm-time">12:00:00</div>
+                <div class="audio-box">
+                    <select name="sound" id="sound-selector">
+                        <option value="1">Sound 1</option>
+                        <option value="2">Sound 2</option>
+                        <option value="3">Sound 3</option>
+                    </select>
+                    <button id="preview-sound">Preview</button>
+                </div>
+                <button id="set-alarm">Set Alarm</button>
+            </div>
         </main>
         <footer>
             placeholder footer
