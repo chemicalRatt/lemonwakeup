@@ -1,6 +1,7 @@
 
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Comfortaa&family=Underdog&display=swap');
 /* COMMON */
-
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@
 body {
     height: 100vh;
     width: 100vw;
+    background: radial-gradient(gold,goldenrod);
 }
 
 /* MAIN LAYOUT */
@@ -18,7 +20,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-rows: 1fr 10fr 1fr;
-    background: radial-gradient(gold,goldenrod);
+   
 }
 
 header {
@@ -26,10 +28,11 @@ header {
     display: grid;
     align-items: center;
     justify-content: left;
+    font-family: "Underdog", serif,monospace;
     font-size: 2rem;
     background: black;
     border-bottom: 2px solid whitesmoke;
-    color: whitesmoke;
+    color: goldenrod;
     padding: 10px;
 }
 
@@ -49,17 +52,28 @@ footer{
     justify-content: center;
     background: black;
     border-top: 2px solid whitesmoke;
+    font-family: "Comfortaa", monospace;
+    color: whitesmoke;
+}
+
+.logo {
+    padding: 5px;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
 }
 
 /* APP */
-
+.current-time,
+.alarm-time {
+    font-family: "Allerta Stencil", monospace;
+}
 
 .current-time {
-    font-size: 8rem;
+    font-size: 12rem;
 }
 
 .alarm-time {
-    font-size: 4em;
+    font-size: 8em;
 }
 
 .control-box {
@@ -70,6 +84,7 @@ footer{
 }
 
 .control-box * {
+    font-family: "Comfortaa",monospace;
     font-size: 1rem;
 }
 
